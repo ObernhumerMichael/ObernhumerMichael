@@ -46,5 +46,3 @@ The source of obernhumer.com. A static Astro site built to its own written desig
 ## 04 · Elsewhere
 
 [mail@obernhumer.com](mailto:mail@obernhumer.com) · [obernhumer.com](https://obernhumer.com) · [PGP key](https://obernhumer.com/pgp.asc)
-
-<sub><samp>Header set in Source Serif 4 and IBM Plex, in the blog's own colours. The writing list syncs daily from the RSS feed.</samp></sub>
