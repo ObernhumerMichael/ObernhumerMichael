@@ -17,6 +17,7 @@ Almost three years of Docker Compose set up by hand over SSH, moved into an Ansi
 <samp>2026-09-23</samp>&ensp;**[Email aliases for a year: small cost, no payoff yet](https://obernhumer.com/w/002/)**<br>
 Every account I have now uses its own SimpleLogin alias. A year in, the daily cost turned out small, the fear of silent mail loss didn’t go away, and none of the 37 aliases has needed disabling.
 
+
 <!-- BLOG-POST-LIST:END -->
 
 [all writing →](https://obernhumer.com/writing) · [rss ↗](https://obernhumer.com/rss.xml)
