@@ -10,7 +10,8 @@ Outside of work it's Linux and running my own services: NixOS on the laptop, Deb
 
 ## 01 · Writing
 
-<!-- BLOG-POST-LIST:START --><samp>2026-09-23</samp>&ensp;**[What moving my homelab to Ansible actually took](https://obernhumer.com/w/001/)**<br>
+<!-- BLOG-POST-LIST:START -->
+<samp>2026-09-23</samp>&ensp;**[What moving my homelab to Ansible actually took](https://obernhumer.com/w/001/)**<br>
 Almost three years of Docker Compose set up by hand over SSH, moved into an Ansible repository in a week, and the bugs that showed idempotent and reproducible aren’t the same claim.
 
 <samp>2026-09-23</samp>&ensp;**[Email aliases for a year: small cost, no payoff yet](https://obernhumer.com/w/002/)**<br>

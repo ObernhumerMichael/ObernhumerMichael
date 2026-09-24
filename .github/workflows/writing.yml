@@ -22,6 +22,10 @@ jobs:
           max_post_count: 5
           template: '<samp>$date</samp>&ensp;**[$title]($url)**<br>$newline$description$newline$newline'
           date_format: 'UTC:yyyy-mm-dd'
+          # Without this the first item lands on the START marker's line, and
+          # GitHub treats a line starting with "<!--" as raw HTML, so the
+          # Markdown in that item is never parsed.
+          tag_post_pre_newline: true
           # The feed is my own, so there is nothing to escape; encoding would
           # turn typographic quotes into entities and churn the README.
           disable_html_encoding: true
