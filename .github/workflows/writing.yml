@@ -1,0 +1,30 @@
+# Rewrites the "Writing" list in README.md from the blog's RSS feed.
+# The template must stay in sync with the hand-written seed between the
+# BLOG-POST-LIST markers, or the first run produces a formatting-only commit.
+name: Sync writing
+
+on:
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: gautamkrishnar/blog-post-workflow@f177491c77670f150ab4e9b9890254d8eba4164b # 1.9.7
+        with:
+          feed_list: 'https://obernhumer.com/rss.xml'
+          max_post_count: 5
+          template: '<samp>$date</samp>&ensp;**[$title]($url)**<br>$newline$description$newline$newline'
+          date_format: 'UTC:yyyy-mm-dd'
+          # The feed is my own, so there is nothing to escape; encoding would
+          # turn typographic quotes into entities and churn the README.
+          disable_html_encoding: true
+          # No empty "keepalive" commits.
+          enable_keepalive: false
+          commit_message: 'docs: sync writing from obernhumer.com'
